@@ -1,0 +1,1 @@
+proc macro bodge to generate types based off of other types (without needing to be colocated in the same crate or file)

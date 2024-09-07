@@ -1,0 +1,19 @@
+[package]
+name = "autostruct"
+authors = ["taffyko"]
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[[bin]]
+name = "autostruct"
+
+[dependencies]
+anyhow = "1.0.75"
+lazy_static = "1.5.0"
+proc-macro2 = { version = "1.0.69", features = ["span-locations"] }
+quote = "1.0.33"
+syn = { version = "2.0.38", features = ["parsing", "full", "visit-mut"] }
+thread_local = "1.1.8"
